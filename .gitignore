@@ -138,3 +138,15 @@ dist
 .yarn/install-state.gz
 .pnp.*
 >>>>>>> 714749cee3958afd22f4baaf445a464efb21b84c
+
+
+# Ignorar bases de datos y binarios de MongoDB
+src/data/**/WiredTiger*
+src/data/**/journal/
+src/data/**/diagnostic.data/
+src/data/**/mongod.lock
+src/data/**/storage.bson
+src/data/**/sizeStorer.wt
+src/data/**/_mdb_catalog.wt
+src/data/**/collection-*.wt
+src/data/**/index-*.wt
